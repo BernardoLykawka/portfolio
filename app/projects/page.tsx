@@ -1,27 +1,23 @@
+"use client";
+import React from "react";
 import { Link } from "@heroui/link";
-import { button as buttonStyles } from "@heroui/theme";
 
-import { siteConfig } from "@/config/site";
 import { title } from "@/components/utils/primitives";
-import { GithubIcon } from "@/components/utils/icons";
+import useProjects from "../../components/projects/hook";
+import ProjectsList from "@/components/projects/ProjectsList";
 
 export default function Home() {
+  const projects = useProjects();
+
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-5 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title({ color: "pink" })}>My Projects</span>
+        <span className={title({ size: "md", color: "violet" })}>My Projects</span>
       </div>
 
       <div className="flex gap-3">
-        <Link
-          isExternal
-          className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
-        >
-          <GithubIcon size={20} />
-          GitHub
-        </Link>
       </div>
+      <ProjectsList />
     </section>
   );
 }

@@ -28,7 +28,6 @@ export const Navbar = () => {
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium hover:text-cyan-500",
                 )}
-                color="foreground"
                 href={item.href}
               >
                 {item.label}
@@ -44,12 +43,12 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-default-500 hover:text-cyan-500" />
           </Link>
           <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
-          <LinkedInIcon className="text-default-500" />
+          <LinkedInIcon className="text-default-500 hover:text-cyan-500" />
         </Link>
-          <ThemeSwitch />
+          <ThemeSwitch className="hover:text-cyan-500"/>
         </NavbarItem>
       </NavbarContent>
 
