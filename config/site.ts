@@ -1,10 +1,9 @@
-import { link } from "fs";
-
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Bernardo Portfolio",
-  description: "Make beautiful websites regardless of your design experience.",
+  myName: "Bernardo Lykawka Medeiros Silva",
+  email: "bernardolmsilvas@gmail.com",
   navItems: [
     {
       label: "About Me",
@@ -14,17 +13,16 @@ export const siteConfig = {
       label: "Projects",
       href: "/projects",
     },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
   ],
   links: {
     github: "https://github.com/BernardoLykawka",
     linkedin: "https://www.linkedin.com/in/bernardolykawka/",
   },
+  errors: {
+    noProjects: "No projects found.",
+    pageNotFound: "The page you are looking for does not exist.",
+  },
+  projects: {
+    description: "Here are some of the projects I've worked on. Feel free to explore and check out the code on GitHub!"
+  }
 };

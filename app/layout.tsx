@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
-  description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
   },
@@ -51,7 +50,7 @@ export default function RootLayout({
               <span
                 className="flex items-center gap-1 text-current"
               >
-                <span className="text-default-600">bernardolmsilvas@gmail.com</span>
+                <span className="text-default-600">{siteConfig.email}</span>
               </span>
             </footer>
           </div>

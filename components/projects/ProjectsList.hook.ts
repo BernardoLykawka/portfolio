@@ -11,7 +11,12 @@ export default function useProjects() {
 
     (async () => {
       try {
-        const response = await api.get('/users/BernardoLykawka/repos');
+        const response = await api.get('/users/BernardoLykawka/repos', {
+          params: {
+            per_page: 100,
+            sort: 'updated',
+          },
+        });
         console.log('fetchProjects response', response);
         const data = Array.isArray(response.data) ? response.data : [];
         if (mounted) setProjects(data as Project[]);
