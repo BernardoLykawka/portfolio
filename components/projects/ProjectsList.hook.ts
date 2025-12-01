@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 export default function useProjects() {
   const [projects, setProjects] = useState<Project[]>([]);
-  const LanguagesList = ["TypeScript", "JavaScript", "Python", "HTML", "CSS", "Go", "Java", "C++", "C#", "PHP"];
 
   useEffect(() => {
     let mounted = true;

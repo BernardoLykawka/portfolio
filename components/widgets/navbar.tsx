@@ -2,6 +2,9 @@ import {
   Navbar as HeroUINavbar,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import { link as linkStyles } from "@heroui/theme";
@@ -19,6 +22,10 @@ export const Navbar = () => {
 
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
+      <NavbarContent className="sm:hidden" justify="start">
+        <NavbarMenuToggle />
+      </NavbarContent>
+
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
@@ -61,6 +68,22 @@ export const Navbar = () => {
         </Link>
         <ThemeSwitch />
       </NavbarContent>
+
+      <NavbarMenu>
+        {siteConfig.navItems.map((item, index) => (
+          <NavbarMenuItem key={`${item.label}-${index}`}>
+            <NextLink
+              className={clsx(
+                linkStyles({ color: "foreground" }),
+                "w-full hover:text-cyan-500",
+              )}
+              href={item.href}
+            >
+              {item.label}
+            </NextLink>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </HeroUINavbar>
   );
 };

@@ -17,12 +17,15 @@ export const siteConfig = {
   links: {
     github: "https://github.com/BernardoLykawka",
     linkedin: "https://www.linkedin.com/in/bernardolykawka/",
+    corre:"https://correcomocoracao.ong.br"
   },
   errors: {
     noProjects: "No projects found.",
     pageNotFound: "The page you are looking for does not exist.",
   },
   projects: {
-    description: "Here are some of the projects I've worked on. Feel free to explore and check out the code on GitHub!"
+    description: "Here are some of the projects I've worked on. Feel free to explore and check out the code on GitHub!",
+    correDescription: "Corre com o Coração - ONG project description here.",
+    learnPhysicsDescription: "Learn-Physics project description here."
   }
 };

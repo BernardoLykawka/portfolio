@@ -3,6 +3,7 @@ import { Accordion, AccordionItem } from "@heroui/accordion";
 import { subtitle } from "@/components/utils/primitives";
 import { getLanguageIcon } from "@/components/utils/useLanguageIcon";
 import { siteConfig } from "@/config/site";
+import { GithubIcon } from "../utils/icons";
 
 export default function ProjectsList() {
     const projects = useProjects();
@@ -21,7 +22,7 @@ export default function ProjectsList() {
                     startContent={<>{getLanguageIcon(project.language, 24)}</>}
                 >
                     <p className={subtitle()}>{project.description}</p>
-                    <a href={project.html_url}>{project.html_url}</a>
+                    <a className="flex flex-row gap-2 items-center" href={project.html_url}><GithubIcon />See more</a>
                 </AccordionItem>
             ))}
     </Accordion>
