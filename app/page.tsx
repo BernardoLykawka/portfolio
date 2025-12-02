@@ -4,6 +4,7 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/utils/primitives";
 import { GithubIcon, LinkedInIcon } from "@/components/utils/icons";
+import AboutMe from "@/components/aboutMe/aboutMe";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         </Link>
 
       </div>
+      <AboutMe/>
     </section>
   );
 }

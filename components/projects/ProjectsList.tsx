@@ -15,7 +15,7 @@ export default function ProjectsList() {
             .filter(project => project.name !== "BernardoLykawka")
             .map((project) => (
                 <AccordionItem 
-                className="hover:scale-[1.005] transition-all duration-200"
+                    className="hover:scale-[1.005] transition-all duration-200"
                     key={project.id} 
                     title={project.name} 
                     aria-label={`Project: ${project.name}`}
