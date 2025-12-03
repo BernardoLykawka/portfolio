@@ -51,7 +51,7 @@ export default function RootLayout({
               <span
                 className="flex items-center gap-1 text-current"
               >
-                <span className="text-default-600">{siteConfig.email}</span>
+                <span className="text-foreground">{siteConfig.email}</span>
               </span>
             </footer>
           </div>

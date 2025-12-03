@@ -10,7 +10,7 @@ export default function ProjectsList() {
 
     return <>
     {projects.length === 0 ? (<p>{siteConfig.errors.noProjects}</p>) : (
-    <Accordion variant="bordered">
+    <Accordion variant="bordered" className="border-ring">
         {projects
             .filter(project => project.name !== "BernardoLykawka")
             .map((project) => (

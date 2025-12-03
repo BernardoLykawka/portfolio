@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title({ color: "cyan"})}>Bernardo Lykawka Medeiros Silva</span>
+        <span className={title({ color: "cyan"})}>Bernardo Lykawka</span>
       </div>
-
+    <AboutMe/>
       <div className="flex gap-3">
         <Link 
           isExternal
@@ -33,7 +33,6 @@ export default function Home() {
         </Link>
 
       </div>
-      <AboutMe/>
     </section>
   );
 }

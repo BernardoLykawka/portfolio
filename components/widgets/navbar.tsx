@@ -12,7 +12,7 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/utils/theme-switch";
+import { AnimatedThemeToggler } from "@/components/utils/theme-switch";
 import {
   GithubIcon,
   LinkedInIcon,
@@ -55,7 +55,7 @@ export const Navbar = () => {
           <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
           <LinkedInIcon className="text-default-500 hover:text-cyan-500" />
         </Link>
-          <ThemeSwitch className="hover:text-cyan-500"/>
+          <AnimatedThemeToggler className="hover:text-cyan-500"/>
         </NavbarItem>
       </NavbarContent>
 
@@ -66,7 +66,7 @@ export const Navbar = () => {
         <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
           <LinkedInIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
+        <AnimatedThemeToggler />
       </NavbarContent>
 
       <NavbarMenu>
