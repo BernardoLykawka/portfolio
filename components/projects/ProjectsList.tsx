@@ -21,7 +21,7 @@ export default function ProjectsList() {
                     aria-label={`Project: ${project.name}`}
                     startContent={<>{getLanguageIcon(project.language, 24)}</>}
                 >
-                    <p className={subtitle()}>{project.description}</p>
+                    <div className={subtitle()}>{project.description}</div>
                     <a className="flex flex-row gap-2 items-center" href={project.html_url}><GithubIcon />See more</a>
                 </AccordionItem>
             ))}

@@ -6,15 +6,16 @@ import { title } from "@/components/utils/primitives";
 import { GithubIcon, LinkedInIcon } from "@/components/utils/icons";
 import AboutMe from "@/components/aboutMe/aboutMe";
 
+
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title({ color: "cyan"   })}>Bernardo Lykawka Medeiros Silva</span>
+        <span className={title({ color: "cyan"})}>Bernardo Lykawka Medeiros Silva</span>
       </div>
 
       <div className="flex gap-3">
-        <Link
+        <Link 
           isExternal
           className={buttonStyles({ className:"hover:text-cyan-500 hover:border-cyan-500" , variant: "bordered", radius: "full" })}
           href={siteConfig.links.github}

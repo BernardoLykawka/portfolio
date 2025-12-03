@@ -15,8 +15,8 @@ export default function Projects() {
         <ul className="flex flex-col justify-center gap-4">
         {projects.map((project, index) => (
             <li key={index}>
-                <Card>
-                    <CardHeader className="pt-2 px-4 flex-col items-start">
+                <Card className="border-ring border-2 bg-inherit py-2">
+                    <CardHeader className="px-4 flex-col items-start">
                         <h4 className={title( { size: "xs", color: "yellow" } )}>{project}</h4>
                     </CardHeader>
                     <CardBody className="overflow-visible grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 py-2">
@@ -25,7 +25,7 @@ export default function Projects() {
                         <Image
                             as={NextImage}
                             alt="Card background"
-                            className="object-fill rounded-xl hover:scale-[1.01] transition-all duration-200"
+                            className="md:object-fill object-cover rounded-xl hover:scale-[1.01] transition-all duration-200"
                             src={images[index]}
                             width={500}
                             height={300}
