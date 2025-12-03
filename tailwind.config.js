@@ -12,6 +12,8 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        audio: ["var(--font-audio)"],
+        quantico: ["var(--font-quantico)"],
       },
     },
   },
