@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -17,8 +19,12 @@ import {
   GithubIcon,
   LinkedInIcon,
 } from "@/components/utils/icons";
+import { LanguageSwitch } from "../utils/language-switch";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
+  const navItems = t("navItems", { returnObjects: true }) as Array<{ label: string; href: string }>;
 
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
@@ -28,7 +34,7 @@ export const Navbar = () => {
 
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
+          {navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
@@ -56,6 +62,7 @@ export const Navbar = () => {
           <LinkedInIcon className="text-default-500 hover:text-cyan-500" />
         </Link>
           <AnimatedThemeToggler className="hover:text-cyan-500"/>
+          <LanguageSwitch className="text-default-500 hover:text-cyan-500 hover:cursor-pointer" />
         </NavbarItem>
       </NavbarContent>
 
@@ -70,7 +77,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        {siteConfig.navItems.map((item, index) => (
+        {navItems.map((item, index) => (
           <NavbarMenuItem key={`${item.label}-${index}`}>
             <NextLink
               className={clsx(

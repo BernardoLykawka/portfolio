@@ -13,7 +13,7 @@ export default function useProjects() {
         const response = await api.get('/users/BernardoLykawka/repos', {
           params: {
             per_page: 100,
-            sort: 'updated',
+            sort: 'created',
           },
         });
         console.log('fetchProjects response', response);

@@ -5,6 +5,7 @@ import { Image } from "@heroui/image";
 import {Tooltip} from "@heroui/tooltip";
 import {Tabs, Tab} from "@heroui/tabs";
 import NextImage from "next/image";
+import { useTranslation } from "react-i18next";
 
 const techs = [ "../react.svg", "../CSS.svg", "../tailwind.svg","../Python.svg", "../nestjs.svg", "../TypeScript.svg", "../Java.svg", "../Swift.svg"  ,"../docker.svg", "../postgres.svg", "../mongodb.svg" ];
 const techCategories = [
@@ -14,19 +15,21 @@ const techCategories = [
 ];
 
 export default function AboutMe() {
+  const { t } = useTranslation();
+
   return <div className="grid grid-cols-1 md:grid-cols-2 py-8 md:py-10 gap-0">
     <div>
-      <span className={subtitle({className: "whitespace-pre-line text-foreground text-center max-w-[65ch] leading-relaxed"})}><strong className="text-cyan-500">Full-Stack Developer</strong> focused on shipping reliable code.
+      <span className={subtitle({className: "whitespace-pre-line text-foreground text-center max-w-[65ch] leading-relaxed"})}><strong className="text-cyan-500">{t("aboutMe.fullstack")}</strong> {t("aboutMe.pt2")}
 
       </span>
       <span className={subtitle({className: "whitespace-pre-line text-foreground text-justify max-w-[65ch] leading-relaxed"})}>
-As a Software Engineering student, I combine a strong foundation in algorithms with practical expertise in React, Java and Typescript. 
+{t("aboutMe.pt3")}
       </span>
       <span className={subtitle({className: "whitespace-pre-line text-foreground text-justify max-w-[65ch] leading-relaxed"})}>
-        My experience spans the full development lifecycle, from conceptualizing ideas in collaborative environments to deploying scalable applications.
+        {t("aboutMe.pt4")}
       </span>
       <span className={subtitle({className: "whitespace-pre-line text-foreground text-justify max-w-[65ch] leading-relaxed"})}>
-        I am seeking an opportunity to join a dynamic team where I can leverage my proactive attitude and full-stack capabilities to deliver high-quality software.
+        {t("aboutMe.pt5")}
       </span>
 
     </div>

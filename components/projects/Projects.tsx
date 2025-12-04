@@ -1,16 +1,19 @@
+"use client";
 import {Image} from "@heroui/image";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import NextImage from "next/image";
 import { title } from "../utils/primitives";
 import Link from "next/link";
 import { siteConfig as config } from "@/config/site";
+import { useTranslation } from "react-i18next";
 
 const projects = [ "Corre com o Coração", "Learn-Physics" , "WBD +", "Lucky Draw" ];
-const descriptions = [config.projects.correDescription, config.projects.learnPhysicsDescription, config.projects.wbdDescription, config.projects.luckyDrawDescription];
 const links = [config.links.corre, "https://learn-physics.example.com", config.links.wbd, config.links.luckyDraw];
 const images = [config.images.correImage, config.images.learnPhysicsImage, config.images.wbdImage, config.images.luckyDrawImage];
 
 export default function Projects() {
+  const { t } = useTranslation();
+  const descriptions = [t("projects.correDescription"), t("projects.learnPhysicsDescription"), t("projects.wbdDescription"), t("projects.luckyDrawDescription")];
   return <div>
         <ul className="flex flex-col justify-center gap-4">
         {projects.map((project, index) => (
