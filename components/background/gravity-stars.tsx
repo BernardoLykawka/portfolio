@@ -50,6 +50,8 @@ function GravityStarsBackground({
   className,
   ...props
 }: GravityStarsProps) {
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+  const effectiveStarsCount = isMobile ? Math.max(15, Math.floor(starsCount * 0.35)) : starsCount;
   const containerRef = React.useRef<HTMLDivElement | null>(null);
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
   const animRef = React.useRef<number | null>(null);
@@ -70,7 +72,7 @@ function GravityStarsBackground({
 
   const initStars = React.useCallback(
     (w: number, h: number) => {
-      starsRef.current = Array.from({ length: starsCount }).map(() => {
+      starsRef.current = Array.from({ length: effectiveStarsCount }).map(() => {
         const angle = Math.random() * Math.PI * 2;
         const speed = movementSpeed * (0.5 + Math.random() * 0.5);
         return {
@@ -87,7 +89,7 @@ function GravityStarsBackground({
         };
       });
     },
-    [starsCount, movementSpeed, starsOpacity, starsSize],
+    [effectiveStarsCount, movementSpeed, starsOpacity, starsSize],
   );
 
   const redistributeStars = React.useCallback((w: number, h: number) => {

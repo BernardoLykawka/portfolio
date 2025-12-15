@@ -74,6 +74,7 @@ export const Navbar = () => {
           <LinkedInIcon className="text-default-500" />
         </Link>
         <AnimatedThemeToggler />
+        <LanguageSwitch className="text-default-500" />
       </NavbarContent>
 
       <NavbarMenu>

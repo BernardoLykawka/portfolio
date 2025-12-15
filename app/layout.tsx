@@ -7,7 +7,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontQuantico  } from "@/config/fonts";
 import { Navbar } from "@/components/widgets/navbar";
-import { GravityStarsBackground } from "@/components/animate-ui/components/backgrounds/gravity-stars";
+import { GravityStarsBackground } from "@/components/background/gravity-stars";
 
 export const metadata: Metadata = {
   title: {

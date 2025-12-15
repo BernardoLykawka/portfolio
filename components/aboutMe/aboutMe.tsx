@@ -44,7 +44,7 @@ export default function AboutMe() {
                     <span>
                       <Image
                         as={NextImage}
-                        src={`/techs/${tech}`}
+                        src={`languages/${tech.replace('../', '')}`}
                         alt={tech.replace('.svg', '')}
                         width={48}
                         height={48}

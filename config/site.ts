@@ -20,8 +20,8 @@ export const siteConfig = {
     github: "https://github.com/BernardoLykawka",
     linkedin: "https://www.linkedin.com/in/bernardolykawka/",
     corre:"https://correcomocoracao.ong.br", 
-    wbd: "https://tools.ages.pucrs.br/wimbelemdon-mais/wiki/-/wikis/home",
-    luckyDraw: "https://tools.ages.pucrs.br/lucky-draw/wiki/-/wikis/home"
+    wbd: "https://tools.ages.pucrs.br/wimbelemdon-mais",
+    luckyDraw: "https://tools.ages.pucrs.br/lucky-draw"
   },
   errors: {
     noProjects: "No projects found.",

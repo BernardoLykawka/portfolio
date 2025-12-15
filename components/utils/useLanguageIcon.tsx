@@ -34,7 +34,7 @@ export const LanguageImage: React.FC<LanguageImageProps> = ({
 
   return (
     <img
-      src={`/${filename}`}
+      src={`languages/${filename}`}
       width={size}
       height={size}
       alt={`${name} icon`}
