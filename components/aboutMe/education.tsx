@@ -44,7 +44,7 @@ export default function Education() {
   const item = educationList[selected - 1];
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col py-16 gap-8">
        <h2 className={`${title({ size: "xs", color: "cyan" })} text-center`}>{t("educationTitle")}</h2>
       <Slider
         className="w-80 md:w-120"
@@ -69,7 +69,7 @@ export default function Education() {
             className="absolute w-full"
           >
             <Card className="border-ring border-2 bg-inherit py-2">
-              <CardHeader className="justify-center">
+              <CardHeader className="flex text-center items-center justify-center">
                 <span className="font-semibold text-lg">{item.degree}</span>
               </CardHeader>
               <CardBody>
