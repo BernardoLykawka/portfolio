@@ -18,7 +18,6 @@ export default function Home() {
         <span className={subtitle() + " text-center"}>{t("projects.description")}</span>
       </div>
         <Projects/>
-        
       <ProjectsList />
     </section>
   );

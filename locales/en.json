@@ -23,5 +23,31 @@
         "pt3": "As a Software Engineering student at PUC-RS, I combine a strong foundation in algorithms with practical expertise in React, Java and Typescript. ",
         "pt4": "My experience spans the full development lifecycle, from conceptualizing ideas in collaborative environments to deploying scalable applications.",
         "pt5": "I am seeking an opportunity to join a dynamic team where I can leverage my proactive attitude and full-stack capabilities to deliver high-quality software."
+    },
+    "educationTitle": "My Timeline",
+    "education1": {
+        "degree": "High School",
+        "institution": "Colégio Mãe de Deus",
+        "period": "February 2021 - December 2023"
+    },
+    "education2": {
+        "degree": "Bachelor's in Software Engineering",
+        "institution": "Pontifical Catholic University of Rio Grande do Sul \n(PUC-RS)",
+        "period": "March 2024 - Present"
+    },
+    "education3": {
+        "degree": "1st team project developed - Lucky Draw",
+        "institution": "PUC-RS - AGES",
+        "period": "March 2025"
+    },
+    "education4": {
+        "degree": "1st participation in Hackathons",
+        "institution": "Organized by PUC-RS",
+        "period": "June 2025"
+    },
+    "education5": {
+        "degree": "Apple Developer Academy: Foundations",
+        "institution": "PUC-RS, Apple and Instituto Eldorado",
+        "period": "August 2025 - September 2025"  
     }
 }

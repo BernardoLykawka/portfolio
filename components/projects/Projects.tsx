@@ -26,7 +26,6 @@ export default function Projects() {
                 {projects.map((project, index) => {
                     const controls = useAnimation();
                     const ref = useRef(null);
-                    const [showDropdown, setShowDropdown] = useState(false);
                     useEffect(() => {
                         const observer = new window.IntersectionObserver(
                             ([entry]) => {

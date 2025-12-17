@@ -23,5 +23,31 @@
         "pt3": "Como estudante de Engenharia de Software na PUC-RS, combino uma sólida base em algoritmos com experiência prática em React, Java e Typescript.",
         "pt4": "Minha experiência abrange todo o ciclo de desenvolvimento, desde a conceituação de ideias em ambientes colaborativos até a implantação de aplicações escaláveis.",
         "pt5": "Estou buscando uma oportunidade para me juntar a uma equipe dinâmica onde possa aproveitar minha atitude proativa e capacidades full-stack para entregar software de alta qualidade."
+    },
+    "educationTitle": "Linha do Tempo",
+    "education1": {
+        "degree": "Ensino Médio",
+        "institution": "Colégio Mãe de Deus",
+        "period": "Fevereiro 2021 - Dezembro 2023"
+    },
+    "education2": {
+        "degree": "Bacharelado em Engenharia de Software",
+        "institution": "Pontifícia Universidade Católica do Rio Grande do Sul \n(PUC-RS)",
+        "period": "Março 2024 - Presente"
+    },
+    "education3": {
+        "degree": "1º projeto em equipe desenvolvido - Lucky Draw",
+        "institution": "PUC-RS - AGES",
+        "period": "Março 2025 - Julho 2025"
+    },
+    "education4": {
+        "degree": "1º participação em Hackathons",
+        "institution": "Organizado pela PUC-RS",
+        "period": "Junho 2025"
+    },
+    "education5": {
+        "degree": "Apple Developer Academy: Foundations",
+        "institution": "PUC-RS, Apple e Instituto Eldorado",
+        "period": "Agosto 2025 - Setembro 2025"  
     }
 }

@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { title } from "@/components/utils/primitives";
 import { GithubIcon, LinkedInIcon } from "@/components/utils/icons";
 import AboutMe from "@/components/aboutMe/aboutMe";
+import Education from "@/components/aboutMe/education";
 
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
       <div className="inline-block max-w-xl text-center justify-center">
         <span className={title({ color: "cyan"})}>Bernardo Lykawka</span>
       </div>
-    <AboutMe/>
-      <div className="flex gap-3">
+        <AboutMe/>
+        <Education/>
+      <div className="flex gap-3 mt-8">
         <Link 
           isExternal
           className={buttonStyles({ className:"hover:text-cyan-500 hover:border-cyan-500" , variant: "bordered", radius: "full" })}
@@ -31,7 +33,6 @@ export default function Home() {
           <LinkedInIcon size={20} />
           LinkedIn
         </Link>
-
       </div>
     </section>
   );
