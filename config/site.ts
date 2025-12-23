@@ -1,9 +1,7 @@
-import AboutMe from "@/components/aboutMe/aboutMe";
-
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Bernardo Portfolio",
+  name: "Portfolio - Bernardo Lykawka",
   myName: "Bernardo Lykawka Medeiros Silva",
   email: "bernardolmsilvas@gmail.com",
   navItems: [
@@ -21,7 +19,8 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/bernardolykawka/",
     corre:"https://correcomocoracao.ong.br", 
     wbd: "https://tools.ages.pucrs.br/wimbelemdon-mais",
-    luckyDraw: "https://tools.ages.pucrs.br/lucky-draw"
+    luckyDraw: "https://tools.ages.pucrs.br/lucky-draw",
+    learnPhysics: "https://physics-flax.vercel.app",
   },
   errors: {
     noProjects: "No projects found.",
@@ -29,8 +28,8 @@ export const siteConfig = {
   },
   
   images: {
-    correImage: "https://heroui.com/images/hero-card-complete.jpeg",
-    learnPhysicsImage: "https://heroui.com/images/hero-card-complete.jpeg",
+    correImage: "/corre.png",
+    learnPhysicsImage: "/physics.png",
     wbdImage: "/wbd.png",
     luckyDrawImage: "/LuckyDraw.png",
   }

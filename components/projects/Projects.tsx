@@ -14,7 +14,7 @@ import { ChevronLeft } from "lucide-react";
 const teamImages = [null, null, "/wbd_time.jpeg", "/luckyDraw_time.png"];
 
 const projects = [ "Corre com o Coração", "Learn-Physics" , "WBD +", "Lucky Draw" ];
-const links = [config.links.corre, "https://learn-physics.example.com", config.links.wbd, config.links.luckyDraw];
+const links = [config.links.corre, config.links.learnPhysics, config.links.wbd, config.links.luckyDraw];
 const images = [config.images.correImage, config.images.learnPhysicsImage, config.images.wbdImage, config.images.luckyDrawImage];
 
 export default function Projects() {
