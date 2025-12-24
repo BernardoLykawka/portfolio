@@ -82,9 +82,9 @@ export default function Projects() {
                                                         as={NextImage}
                                                         src={teamImages[index] as string}
                                                         alt={`Equipe do projeto ${project}`}
-                                                        className="md:object-fill object-cover rounded-xl hover:scale-[1.01] transition-all duration-200 w-full"
+                                                        className="md:object-fill object-cover rounded-xl hover:scale-[1.01] transition-all duration-200 "
                                                         style={{ maxWidth: 500, minHeight: 180, height: 300 }}
-                                                        width={500}
+                                                        width={800}
                                                         height={300}
                                                     />
                                                 </Link>
@@ -93,10 +93,11 @@ export default function Projects() {
                                                     <Image
                                                         as={NextImage}
                                                         alt="Card background"
-                                                        className="md:object-fill object-cover rounded-xl hover:scale-[1.01] transition-all duration-200"
+                                                        className="md:object-cover object-cover rounded-xl hover:scale-[1.01] transition-all duration-200 w-full aspect-[16/9]"
+                                                        style={{ maxWidth: 500, minHeight: 180, height: 300, maxHeight: 300 }}
                                                         src={images[index]}
-                                                        width={500}
-                                                        height={300}
+                                                        width={1920}
+                                                        height={1080}
                                                     />
                                                 </Link>
                                             )}
